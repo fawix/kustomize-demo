@@ -1,0 +1,11 @@
+#kubectl kustomize ./d1
+  
+namePrefix: uat-
+commonLabels:
+  env: uat
+
+bases:
+  - ../../base
+
+patchesStrategicMerge:
+  - service.yaml

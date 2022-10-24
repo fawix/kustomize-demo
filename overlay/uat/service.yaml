@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  volumes:
+    - name: dev-volume
+      secret:
+          secretName: dev-volume #could be generated from unique secret)

@@ -1,0 +1,5 @@
+#kubectl kustomize ./d1
+resources:
+- service.yaml
+
+namePrefix: demo-

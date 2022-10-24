@@ -1,0 +1,6 @@
+#kubectl kustomize ./d1
+resources:
+  - service.yaml
+  
+commonLabels:
+  type: demo
