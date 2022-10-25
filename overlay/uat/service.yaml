@@ -4,6 +4,6 @@ metadata:
   name: nginx
 spec:
   volumes:
-    - name: dev-volume
+    - name: uat-volume
       secret:
-          secretName: dev-volume #could be generated from unique secret)
+          secretName: uat-volume #could be generated from unique secret)

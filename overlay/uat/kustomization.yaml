@@ -1,5 +1,5 @@
 #kubectl kustomize ./d1
-  
+ 
 namePrefix: uat-
 commonLabels:
   env: uat

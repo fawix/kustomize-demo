@@ -1,5 +1,11 @@
 #kubectl kustomize ./d1
-resources:
-- service.yaml
+  
+namePrefix: prod-
+commonLabels:
+  env: prod
 
-namePrefix: demo-
+bases:
+  - ../../base
+
+patchesStrategicMerge:
+  - service.yaml
